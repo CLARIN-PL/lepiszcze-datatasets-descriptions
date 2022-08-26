@@ -20,17 +20,14 @@ It consists of 1,277,962 tokens in 1,104 transcribed call center phone conversat
 
 ## Data splits
 
-```
 | Subset     |   Cardinality |
 |:-----------|--------------:|
 | train      |         70454 |
 | validation |          8807 |
 | test       |          8807 |
-```
 
 ## Class distribution
 
-```
 | Class                  |   train |   validation |    test |
 |:-----------------------|--------:|-------------:|--------:|
 | stalling               | 0.22317 |      0.22323 | 0.22312 |
@@ -87,7 +84,6 @@ It consists of 1,277,962 tokens in 1,104 transcribed call center phone conversat
 | completion             | 0.00017 |      0.00011 | 0.00023 |
 | ThirdParty             | 0.00017 |      0.00011 | 0.00023 |
 | addressRequest         | 0.00014 |      0.00011 | 0.00011 |
-```
 
 ## Citation
 
