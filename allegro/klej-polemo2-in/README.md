@@ -21,8 +21,13 @@ The task is to predict the correct label of the review.
 
 **Measurements**: Accuracy
 
-**Example***: 
-Lekarz zalecił mi kurację alternatywną do dotychczasowej , więc jeszcze nie daję najwyższej oceny ( zobaczymy na ile okaże się skuteczna ) . Do Pana doktora nie mam zastrzeżeń : bardzo profesjonalny i kulturalny . Jedyny minus dotyczy gabinetu , który nie jest nowoczesny , co może zniechęcać pacjentki .* → a*mb*
+**Example**: 
+
+Input: `Lekarz zalecił mi kurację alternatywną do dotychczasowej , więc jeszcze nie daję najwyższej oceny ( zobaczymy na ile okaże się skuteczna ) . Do Pana doktora nie mam zastrzeżeń : bardzo profesjonalny i kulturalny . Jedyny minus dotyczy gabinetu , który nie jest nowoczesny , co może zniechęcać pacjentki .`
+
+Input (translated by DeepL): `The doctor recommended me an alternative treatment to the current one , so I do not yet give the highest rating ( we will see how effective it turns out to be ) . To the doctor I have no reservations : very professional and cultured . The only minus is about the office , which is not modern , which may discourage patients .`
+
+Output: `amb` (ambiguous)
 
 ## Data splits
 
