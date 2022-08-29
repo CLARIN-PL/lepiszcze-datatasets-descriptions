@@ -11,7 +11,7 @@ The task is to predict if the answer to the given question is correct or not.
 
 **Input** ('question sentence', 'answer' columns): question and answer sentences
 
-**Output** ('target' column): 1 if the answer is correct, 0 otherwise. Note that the test split doesn't have target values so -1 is used instead
+**Output** ('target' column): 1 if the answer is correct, 0 otherwise.
 
 **Domain**: Wikipedia
 
