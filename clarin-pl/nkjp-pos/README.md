@@ -13,11 +13,15 @@ Part-of-speech tagging (POS tagging) - tagging words in text with their correspo
 
 **Output** ('*pos_tags'* column): sequence of predicted tokens’ classes (35 possible classes, described in detail in the annotation guidelines)
 
-***example**:*
+**Measurements**: F1-score (seqeval)
 
-['Najwyraźniej', 'źle', 'ocenił', 'odległość', ',', 'bo', 'zderzył', 'się', 'z', 'jadącą', 'z', 'naprzeciwka', 'ciężarową', 'scanią', '.'] → ['qub', 'adv', 'praet', 'subst', 'interp', 'comp', 'praet', 'qub', 'prep', 'pact', 'prep', 'burk', 'adj', 'subst', 'interp']
+**Example**:
 
-Measurements:
+Input: `['Zarejestruj', 'się', 'jako', 'bezrobotny', '.']`
+
+Input (translated by DeepL): `Register as unemployed.`
+
+Output:  `['impt', 'qub', 'conj', 'subst', 'interp']`
 
 ## Data splits
 

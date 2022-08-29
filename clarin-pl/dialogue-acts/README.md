@@ -14,9 +14,13 @@ It consists of 1,277,962 tokens in 1,104 transcribed call center phone conversat
 
 **Measurements**: F1-Score
 
-**Example***:* 
+**Example**:
 
-*“Proszę o to, aby przygotował pan sobie od ośmiu do dwudziestu cyfr. Przełączę pana do automatycznej części serwisu. Proszę, aby wpisał pan tam cyfry na klawiaturze telefonu i następnie zatwierdził to (yy) taką kratką na klawiaturze. Następnie proszę na stronie logowania podać (yy) swój numer klienta, ten, który pan mi podał, (yy) no i to hasło, które pan sobie ustali (yy) teraz w tej części automatycznej. (yy) To hasło nie będzie działało na stałe. (yy) Po prostu (yy) po zalogowaniu na te dane, które pan teraz ustalił, ustali pan sobie takie już hasło docelowe.”* → **instruct**
+Input: `Proszę o to, aby przygotował pan sobie od ośmiu do dwudziestu cyfr. Przełączę pana do automatycznej części serwisu. Proszę, aby wpisał pan tam cyfry na klawiaturze telefonu i następnie zatwierdził to (yy) taką kratką na klawiaturze. Następnie proszę na stronie logowania podać (yy) swój numer klienta, ten, który pan mi podał, (yy) no i to hasło, które pan sobie ustali (yy) teraz w tej części automatycznej. (yy) To hasło nie będzie działało na stałe. (yy) Po prostu (yy) po zalogowaniu na te dane, które pan teraz ustalił, ustali pan sobie takie już hasło docelowe.` **
+
+Input (translated by DeepL): `I ask you to prepare eight to twenty digits. I will switch you to the automatic part of the service. I ask you to enter the digits there on the phone keypad and then confirm it with (yy) such a check mark on the keypad. Then, on the login page, please enter (yy) your customer number, the one you gave me, (yy) well, and this password that you will set for yourself (yy) now in this automatic part. (yy) This password will not work permanently. (yy) You will simply (yy) after logging in with this data that you have now established, you will set yourself such a target password already.`
+
+Output: `instruct`
 
 ## Data splits
 

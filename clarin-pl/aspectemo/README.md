@@ -21,9 +21,15 @@ Aspect-based sentiment analysis (ABSA) is a text analysis method that categorize
 
 **Domain**: school, medicine, hotels and products
 
-**Measurements**:
+**Measurements**: F1-score (seqeval)
 
-**Example***: ['Dużo', 'wymaga', ',', 'ale', 'bardzo', 'uczciwy', 'i', 'przyjazny', 'studentom', '.', 'Warto', 'chodzić', 'na', 'konsultacje', '.', 'Docenia', 'postępy', 'i', 'zaangażowanie', '.', 'Polecam', '.']* → *['O', 'a_plus_s', 'O', 'O', 'O', 'a_plus_m', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'a_zero', 'O', 'a_plus_m', 'O', 'O', 'O', 'O', 'O', 'O']*
+**Example:** 
+
+Input: `['Dużo', 'wymaga', ',', 'ale', 'bardzo', 'uczciwy', 'i', 'przyjazny', 'studentom', '.', 'Warto', 'chodzić', 'na', 'konsultacje', '.', 'Docenia', 'postępy', 'i', 'zaangażowanie', '.', 'Polecam', '.']`
+
+Input (translated by DeepL): `'Demands a lot , but very honest and student friendly . Worth going to consultations . Appreciates progress and commitment . I recommend .'`
+
+Output: `['O', 'a_plus_s', 'O', 'O', 'O', 'a_plus_m', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'a_zero', 'O', 'a_plus_m', 'O', 'O', 'O', 'O', 'O', 'O']`
 
 ## Data splits
 
