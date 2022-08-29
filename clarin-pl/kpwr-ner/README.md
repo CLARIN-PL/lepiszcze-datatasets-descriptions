@@ -6,18 +6,21 @@
 KPWR-NER is a part the Polish Corpus of Wrocław University of Technology (*Korpus Języka Polskiego Politechniki Wrocławskiej*). Its objective is named entity recognition for fine-grained categories of entities. It is the ‘n82’ version of the KPWr, which means that number of classes is restricted to 82 (originally 120). During corpus creation, texts were annotated by humans from various sources, covering many domains and genres.
 
 ## Tasks (input, output and metrics)
-
 Named entity recognition (NER) - tagging entities in text with their corresponding type.
 
-Input ('*tokens'* column): sequence of tokens
+**Input** ('*tokens'* column): sequence of tokens
 
-Output ('*ner'* column): sequence of predicted tokens’ classes in BIO notation (82 possible classes, described in detail in the annotation guidelines)
+**Output** ('*ner'* column): sequence of predicted tokens’ classes in BIO notation (82 possible classes, described in detail in the annotation guidelines)
 
-*example:*
+**Measurements**: F1-score (seqeval)
 
-[*‘Roboty’, ‘mają’, ‘kilkanaście’, ‘lat’, ‘i’, ‘pochodzą’, ‘z’, ‘USA’, ‘,’, ‘Wysokie’, ‘napięcie’, ‘jest’, ‘dużo’, ‘młodsze’, ‘,’, ‘powstało’, ‘w’, ‘Niemczech’, ‘.’*] → [*‘B-nam_pro_title’, ‘O’, ‘O’, ‘O’, ‘O’, ‘O’, ‘O’, ‘B-nam_loc_gpe_country’, ‘O’, ‘B-nam_pro_title’, ‘I-nam_pro_title’, ‘O’, ‘O’, ‘O’, ‘O’, ‘O’, ‘O’, ‘B-nam_loc_gpe_country’, ‘O’*]
+**Example**:
 
-Measurements:
+Input: `[‘Roboty’, ‘mają’, ‘kilkanaście’, ‘lat’, ‘i’, ‘pochodzą’, ‘z’, ‘USA’, ‘,’, ‘Wysokie’, ‘napięcie’, ‘jest’, ‘dużo’, ‘młodsze’, ‘,’, ‘powstało’, ‘w’, ‘Niemczech’, ‘.’]`
+
+Input (translated by DeepL): `Robots are more than a dozen years old and come from the US, High Voltage is much younger, having been developed in Germany.`
+
+Output: `[‘B-nam_pro_title’, ‘O’, ‘O’, ‘O’, ‘O’, ‘O’, ‘O’, ‘B-nam_loc_gpe_country’, ‘O’, ‘B-nam_pro_title’, ‘I-nam_pro_title’, ‘O’, ‘O’, ‘O’, ‘O’, ‘O’, ‘O’, ‘B-nam_loc_gpe_country’, ‘O’]`
 
 ## Data splits
 
