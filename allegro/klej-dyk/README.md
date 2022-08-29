@@ -17,9 +17,14 @@ The task is to predict if the answer to the given question is correct or not.
 
 **Measurements**: F1-Score
 
-**Example**: 
-*Czym zajmowali się świątnicy? vs. Świątnik – osoba, która dawniej zajmowała się
-obsługą kościoła (świątyni).* → **1 (the answer is correct)**
+**Example**:
+
+Input: `Czym zajmowali się świątnicy?` ; `Świątnik – osoba, która dawniej zajmowała się
+obsługą kościoła (świątyni).`  
+
+Input (translated by DeepL): `What did the sacristans do?` ; `A sacristan - a person who used to be in charge of the handling the church (temple).`
+
+Output: `1` (the answer is correct)
 
 ## Data splits
 
