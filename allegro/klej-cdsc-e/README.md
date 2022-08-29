@@ -12,18 +12,23 @@ Although the SICK corpus inspires the main design of the dataset, it differs in 
 
 The entailment relation between two sentences is labeled with *entailment*, *contradiction*, or *neutral*. The task is to predict if the premise entails the hypothesis (entailment), negates the hypothesis (contradiction), or is unrelated (neutral).
 
+b **entails** a (a **wynika z** b) – if a situation or an event described by sentence b occurs, it is recognized that a situation or an event described by a occurs as well, i.e., a and b refer to the same event or the same situation;  
+
 **Input**: ('sentence_A', 'sentence_B'): sentence pair
 
 **Output** ('entailment_judgment' column): one of the possible entailment relations (*entailment*, *contradiction*, *neutral*)
 
 **Domain:** image captions
 
-*Example:*
-
-- b **entails** a (a **wynika z** b) – if a situation or an event described by sentence b occurs, it is recognized that a situation or an event described by a occurs as well, i.e., a and b refer to the same event or the same situation;  
-Żaden mężczyzna nie stoi na przystanku autobusowym. (Eng. No man standing at the bus stop.) vs. Mężczyzna z żółtą i białą reklamówką w ręce stoi na przystanku obok autobusu. (Eng. A man with a yellow and white commercial in his hand stands at a bus stop next to a bus.) → **entailment**
-
 **Measurements**: Accuracy
+
+**Example:**
+
+Input: `Żaden mężczyzna nie stoi na przystanku autobusowym.`  ; `Mężczyzna z żółtą i białą reklamówką w ręce stoi na przystanku obok autobusu.`
+
+Input (translated by DeepL): `No man standing at the bus stop.` ;  `A man with a yellow and white bag in his hand stands at a bus stop next to a bus.` 
+
+Output: `entailment`
 
 ## Data splits
 
