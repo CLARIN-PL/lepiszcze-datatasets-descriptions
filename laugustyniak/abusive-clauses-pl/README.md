@@ -52,4 +52,16 @@ Output: `KLAUZULA_ABUZYWNA` (abusive clause)
 
 ## Citation
 
-TBD
+```
+@inproceedings{NEURIPS2022_890b206e,
+ author = {Augustyniak, Lukasz and Tagowski, Kamil and Sawczyn, Albert and Janiak, Denis and Bartusiak, Roman and Szymczak, Adrian and Janz, Arkadiusz and Szyma'{n}ski, Piotr and W\k{a}troba, Marcin and Morzy, Miko\l aj and Kajdanowicz, Tomasz and Piasecki, Maciej},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {21805--21818},
+ publisher = {Curran Associates, Inc.},
+ title = {This is the way: designing and compiling LEPISZCZE, a comprehensive NLP benchmark for Polish},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/890b206ebb79e550f3988cb8db936f42-Paper-Datasets_and_Benchmarks.pdf%7D,
+ volume = {35},
+ year = {2022}
+}
+```
